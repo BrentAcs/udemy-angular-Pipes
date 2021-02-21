@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from "@angular/core";
 })
 export class ShortenPipe implements PipeTransform{
 
-  // example of pipe taking arguments.
+  // example of pipe taking unlimited arguments.
   //transform(value: any, ...args: any[]) {
   transform(value: any, limit: number) {
     console.log('shortening ' + value.length + ' to :' + limit);
